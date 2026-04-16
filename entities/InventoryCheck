@@ -1,0 +1,53 @@
+{
+  "name": "InventoryCheck",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "description": "ID do produto"
+    },
+    "product_name": {
+      "type": "string",
+      "description": "Nome do produto"
+    },
+    "product_code": {
+      "type": "string",
+      "description": "C\u00f3digo do produto"
+    },
+    "system_quantity": {
+      "type": "number",
+      "description": "Quantidade no sistema"
+    },
+    "physical_quantity": {
+      "type": "number",
+      "description": "Quantidade f\u00edsica"
+    },
+    "difference": {
+      "type": "number",
+      "description": "Diferen\u00e7a"
+    },
+    "adjusted": {
+      "type": "boolean",
+      "default": false,
+      "description": "Ajustado"
+    },
+    "responsible": {
+      "type": "string",
+      "description": "Respons\u00e1vel pela confer\u00eancia"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observa\u00e7\u00f5es"
+    },
+    "check_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Data da confer\u00eancia"
+    }
+  },
+  "required": [
+    "product_id",
+    "system_quantity",
+    "physical_quantity"
+  ]
+}

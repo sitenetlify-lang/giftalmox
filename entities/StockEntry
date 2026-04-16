@@ -1,0 +1,55 @@
+{
+  "name": "StockEntry",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "description": "ID do produto"
+    },
+    "product_name": {
+      "type": "string",
+      "description": "Nome do produto"
+    },
+    "product_code": {
+      "type": "string",
+      "description": "C\u00f3digo do produto"
+    },
+    "quantity": {
+      "type": "number",
+      "description": "Quantidade"
+    },
+    "supplier": {
+      "type": "string",
+      "description": "Fornecedor"
+    },
+    "invoice_number": {
+      "type": "string",
+      "description": "N\u00famero da nota fiscal"
+    },
+    "received_by": {
+      "type": "string",
+      "description": "Respons\u00e1vel pelo recebimento"
+    },
+    "unit_cost": {
+      "type": "number",
+      "description": "Custo unit\u00e1rio"
+    },
+    "total_cost": {
+      "type": "number",
+      "description": "Custo total"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observa\u00e7\u00f5es"
+    },
+    "entry_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Data e hora da entrada"
+    }
+  },
+  "required": [
+    "product_id",
+    "quantity"
+  ]
+}

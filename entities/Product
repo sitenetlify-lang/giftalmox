@@ -1,0 +1,106 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "C\u00f3digo do item"
+    },
+    "name": {
+      "type": "string",
+      "description": "Nome do produto/material"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descri\u00e7\u00e3o detalhada"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Embalagens",
+        "Papelaria",
+        "Brindes",
+        "Eletr\u00f4nicos",
+        "Tecidos",
+        "Acess\u00f3rios",
+        "Ferramentas",
+        "Limpeza",
+        "Escrit\u00f3rio",
+        "Outros"
+      ],
+      "description": "Categoria"
+    },
+    "subcategory": {
+      "type": "string",
+      "description": "Subcategoria"
+    },
+    "unit": {
+      "type": "string",
+      "enum": [
+        "UN",
+        "CX",
+        "KG",
+        "MT",
+        "LT",
+        "PC",
+        "RL",
+        "FD",
+        "PT",
+        "GL"
+      ],
+      "description": "Unidade de medida"
+    },
+    "current_stock": {
+      "type": "number",
+      "default": 0,
+      "description": "Quantidade atual"
+    },
+    "min_stock": {
+      "type": "number",
+      "default": 0,
+      "description": "Estoque m\u00ednimo"
+    },
+    "max_stock": {
+      "type": "number",
+      "default": 0,
+      "description": "Estoque m\u00e1ximo"
+    },
+    "location": {
+      "type": "string",
+      "description": "Localiza\u00e7\u00e3o f\u00edsica no almoxarifado"
+    },
+    "supplier": {
+      "type": "string",
+      "description": "Fornecedor principal"
+    },
+    "unit_cost": {
+      "type": "number",
+      "default": 0,
+      "description": "Custo unit\u00e1rio"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Ativo",
+        "Inativo",
+        "Descontinuado"
+      ],
+      "default": "Ativo",
+      "description": "Status do item"
+    },
+    "barcode": {
+      "type": "string",
+      "description": "C\u00f3digo de barras"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Foto do item"
+    }
+  },
+  "required": [
+    "code",
+    "name",
+    "category",
+    "unit"
+  ]
+}
