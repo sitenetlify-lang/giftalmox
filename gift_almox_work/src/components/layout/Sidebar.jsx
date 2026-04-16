@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
   LayoutDashboard, Package, ArrowDownToLine, ArrowUpFromLine,
-  ArrowLeftRight, ClipboardCheck, FileBarChart, Bell, ShieldCog
+  ArrowLeftRight, ClipboardCheck, FileBarChart, Bell, Shield
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useSettings } from '@/contexts/SettingsContext';
@@ -84,7 +84,7 @@ export default function Sidebar() {
 
       <div className="px-3 pb-3">
         <Link to="/admin" className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-sidebar-foreground/70 hover:text-sidebar-foreground hover:bg-sidebar-accent/50 transition-all duration-200">
-          <ShieldCog className="h-4.5 w-4.5" />
+          <Shield className="h-4.5 w-4.5" />
           Painel Admin
         </Link>
       </div>
